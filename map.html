@@ -2,14 +2,14 @@
 <html>
   <head>
     <title>Custom Google Map</title>
-    <!--<meta charset="utf-8" />
+    <meta charset="utf-8" />
     <style>
       #map {
         height: 100vh;
         width: 100%;
       }
     </style>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQm9DGFfny8vGNovYiMgvgKF3tufEwU7U&map_ids=ca5ef31ad458efe63ecfcec2” defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQm9DGFfny8vGNovYiMgvgKF3tufEwU7U&callback=initMapmap_ids=ca5ef31ad458efe63ecfcec2” defer></script>
     <script>
       function initMap() {
         const map = new google.maps.Map(document.getElementById("map"), {
@@ -22,7 +22,7 @@
         map.data.loadGeoJson('https://yourdomain.com/path/to/your.geojson');
       }
       window.initMap = initMap;
-    </script>-->
+    </script>
   </head>
   <body>
     <div id="map"></div>
