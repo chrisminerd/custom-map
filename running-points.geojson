@@ -1,0 +1,95 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dartmouth @ St James"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.07677170382938,
+          42.34923336000264
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boston Marathon Finish Line"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.07859190702419,
+          42.34967342718065
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dartmouth St Overpass"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.07887807672402,
+          42.354556918650786
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "White Path @ Mass Ave"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.0897885161001,
+          42.35211944111478
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mass Ave @ Memorial Dr"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.09237070795862,
+          42.357068323395595
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Central Sq - SE Corner"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.10378575989694,
+          42.365610515452346
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+      "name": "Harvard Square"},
+      "geometry": {
+        "coordinates": [
+          -71.11936571208746,
+          42.37355566496652
+        ],
+        "type": "Point"
+      }
+    }
+  ]
+}
