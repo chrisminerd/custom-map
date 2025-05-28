@@ -28,6 +28,12 @@
 
         // Optional: Commented out if GeoJSON is not needed
         map.data.loadGeoJson('/custom-map/testPoly.json');
+              map.data.setStyle({
+        fillColor: 'blue',
+        strokeColor: 'red',
+        strokeWeight: 2,
+        fillOpacity: 0.4,
+      });
       }
       window.initMap = initMap;
     </script>
