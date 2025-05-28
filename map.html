@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Helvetica; color: #0e4ed7; -webkit-text-stroke: #0e4ed7}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    span.s1 {font: 14.0px Helvetica; text-decoration: underline ; font-kerning: none; color: #0e4ed7; background-color: #ffffff; -webkit-text-stroke: 0px #0e4ed7}
+    span.s2 {font: 12.0px Helvetica; color: #000000; -webkit-text-stroke: 0px #000000}
+    span.s3 {font: 14.0px Helvetica; text-decoration: underline ; font-kerning: none; background-color: #ffffff}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Custom Google Map&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="utf-8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>#map {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQm9DGFfny8vGNovYiMgvgKF3tufEwU7U&amp;map_ids=<a href="https://console.cloud.google.com/google/maps-apis/studio/maps/ca5ef31ad458efe63ecfcec2?inv=1&amp;invt=AbynjQ&amp;project=geocoding-453515"><span class="s1">ca5ef31ad458efe63ecfcec2</span></a><span class="s1">”</span> defer&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>function initMap() {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const map = new google.maps.Map(document.getElementById("map"), {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>center: { lat: 40.7128, lng: -74.0060 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>zoom: 12,</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">          </span>mapId: "<a href="https://console.cloud.google.com/google/maps-apis/studio/maps/ca5ef31ad458efe63ecfcec2?inv=1&amp;invt=AbynjQ&amp;project=geocoding-453515"><span class="s3">ca5ef31ad458efe63ecfcec2</span></a>",</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p3"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Load your GeoJSON or KML</p>
+<p class="p1"><span class="Apple-converted-space">        </span>map.data.loadGeoJson('https://yourdomain.com/path/to/your.geojson');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>window.initMap = initMap;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="map"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
