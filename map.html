@@ -4,30 +4,36 @@
     <title>Custom Google Map</title>
     <meta charset="utf-8" />
     <style>
+      html, body, #map {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
       #map {
-        height: 100vh;
-        width: 100%;
         border: 2px solid powderblue;
       }
     </style>
-    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQm9DGFfny8vGNovYiMgvgKF3tufEwU7U&callback=initMapmap_ids=ca5ef31ad458efe63ecfcec2"></script>-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQm9DGFfny8vGNovYiMgvgKF3tufEwU7U&callback=initMap&map_ids=ca5ef31ad458efe63ecfcec2"></script>  
+    <!-- ✅ Use a real API key + async + defer -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQm9DGFfny8vGNovYiMgvgKF3tufEwU7U&callback=initMap&map_ids=ca5ef31ad458efe63ecfcec2"
+      async defer>
+    </script>
     <script>
       function initMap() {
         const map = new google.maps.Map(document.getElementById("map"), {
           center: { lat: 40.7128, lng: -74.0060 },
           zoom: 12,
-          mapId: "ca5ef31ad458efe63ecfcec2",
+          mapId: "ca5ef31ad458efe63ecfcec2"
         });
 
-        // Load your GeoJSON or KML
-        map.data.loadGeoJson('https://yourdomain.com/path/to/your.geojson');
+        // Optional: Commented out if GeoJSON is not needed
+        // map.data.loadGeoJson('https://yourdomain.com/path/to/your.geojson');
       }
       window.initMap = initMap;
     </script>
   </head>
   <body>
-    <div id="map">THE MAP</div>
+    <div>TEST MAP</div>
     <div id="map"></div>
   </body>
 </html>
