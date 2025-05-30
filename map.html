@@ -26,14 +26,14 @@
           mapId: "ca5ef31ad458efe63ecfcec2"
         });
 
-        const firstLayer = new google.maps.Data();
-        firstLayer.loadGeoJson('https://chrisminerd.github.io/custom-map/running-routes.geojson');
-        firstLayer.setStyle({
-          strokeColor: 'red',
-          strokeWeight: 2, // Line thickness
-          zIndex: 2
+      map.data.loadGeoJson('https://site.github.io/custom-map/running-routes.geojson', null, function(features) {
+        map.data.setStyle(function(feature) {
+          return {
+            strokeColor: 'black',
+            strokeWeight: 4, // Border thickness
+            zIndex: 1
+          };
         });
-        firstLayer.setMap(map);
         
         const secondLayer = new google.maps.Data();
         secondLayer.loadGeoJson('https://chrisminerd.github.io/custom-map/running-routes.geojson');
