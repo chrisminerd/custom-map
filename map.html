@@ -30,7 +30,7 @@
         map.data.setStyle(function(feature) {
           return {
             strokeColor: 'black',
-            strokeWeight: 4, // Border thickness
+            strokeWeight: 8, // Border thickness
             zIndex: 1
           };
         });
@@ -39,7 +39,7 @@
         secondLayer.loadGeoJson('https://chrisminerd.github.io/custom-map/running-routes.geojson');
         secondLayer.setStyle({
           strokeColor: 'red',
-          strokeWeight: 2, // Line thickness
+          strokeWeight: 6, // Line thickness
           zIndex: 2
         });
         secondLayer.setMap(map);
