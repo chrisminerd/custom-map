@@ -15,7 +15,7 @@
     </style>
     <!-- ✅ Use a real API key + async + defer -->
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQm9DGFfny8vGNovYiMgvgKF3tufEwU7U&callback=initMap&map_ids=7e7dd8519cd5569126d61cdc"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQm9DGFfny8vGNovYiMgvgKF3tufEwU7U&callback=initMap&map_ids=ca5ef31ad458efe682ed0bd4"
       async defer>
     </script>
     <script>
@@ -23,7 +23,7 @@
         const map = new google.maps.Map(document.getElementById("map"), {
           center: { lat: 42.33217, lng: -71.08458 },
           zoom: 12,
-          mapId: "7e7dd8519cd5569126d61cdc"
+          mapId: "ca5ef31ad458efe682ed0bd4"
         });
 
       map.data.loadGeoJson('https://chrisminerd.github.io/custom-map/running-routes.geojson', null, function(features) {
