@@ -44,16 +44,20 @@
         });
         secondLayer.setMap(map);
         
-        // Optional: Commented out if GeoJSON is not needed
-        //map.data.loadGeoJson('https://chrisminerd.github.io/custom-map/running-points.geojson');     
-        //map.data.loadGeoJson('https://chrisminerd.github.io/custom-map/running-routes.geojson');       
-        //map.data.loadGeoJson('custom-map/testPoly.geojson');
-        //map.data.setStyle({
-        //fillColor: 'blue',
-        //strokeColor: 'red',
-        //strokeWeight: 2,
-        //fillOpacity: 0.6,
-      });
+        const pointLayer = new google.maps.Data();
+        pointLayer.loadGeoJson('https://chrisminerd.github.io/custom-map/running-points.geojson');
+        pointLayer.setStyle({
+          icon: {
+            path: google.maps.SymbolPath.CIRCLE,
+            fillColor: 'red',
+            fillOpacity: 1,
+            strokeColor: 'black',
+            strokeWeight: 1,
+            scale: 6 // Size of the circle
+          },
+          zIndex: 3
+  });
+  pointLayer.setMap(map);
       }
       window.initMap = initMap;
     </script>
